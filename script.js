@@ -12,16 +12,12 @@ let apple = [13,13]
 
 let appleCount = 0
 
-// var audioElement = new Audio('balls_3.mp3')
-// audioElement.loop = true
-
 var audioElementS = new Audio('mario_star.mp3')
 audioElementS.loop = true
 
 var intervalId
 
 function myStopFunction() {
-//   audioElement.pause()
   audioElementS.pause()
   keydirection = 'right'
   document.querySelector('.startButton').style.display = "block"
@@ -30,7 +26,6 @@ function myStopFunction() {
 }
 
 function myStartFunction() {
-//   audioElement.play()
   document.querySelector('.startButton').style.display = "none"
   intervalId = window.setInterval(function(){
     drawSnake(snakes, keydirection, apple, allGrid)
@@ -52,12 +47,10 @@ function appleCheck(apple, snake, allGrid) {
     if (((appleCount % 5) == 0) && appleCount!=0){
       tr2.cells[apple[1]].classList.add('starClass')
       audioElementS.play()
-//       audioElement.pause()
     }
     else{
       tr2.cells[apple[1]].classList.add('appleClass')
       audioElementS.pause()
-//       audioElement.play()
     }
   }
 
@@ -67,12 +60,10 @@ function appleCheck(apple, snake, allGrid) {
     if (((appleCount % 5) == 0) && appleCount!=0){
       tr.cells[apple[1]].classList.add('starClass')
       audioElementS.play()
-//       audioElement.pause()
     }
     else{
       tr.cells[apple[1]].classList.add('appleClass')
       audioElementS.pause()
-//       audioElement.play()
     }
   }
 }
@@ -118,7 +109,34 @@ function checkKey(e) {
       }
        // right arrow
     }
+}
 
+function upPress() {
+        if (keydirection != 'down'){
+        keydirection = 'up'
+      }
+}
+
+function downPress() {
+  if (keydirection != 'up'){
+        keydirection = 'down'
+      }
+}
+
+function rightPress() {
+  if (keydirection != 'left'){
+        keydirection = 'right'
+      }
+}
+
+function leftPress() {
+        if (keydirection != 'right'){
+        keydirection = 'left'
+      }
+}
+
+function phoneActive() {
+      document.querySelector('.phoneButtons').style.display = "block"
 }
 
 function drawSnake(snake, keydirection, apple, allGrid) {
