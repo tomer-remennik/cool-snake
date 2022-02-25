@@ -2,7 +2,7 @@ table{
   width: 600px;
   height: 600px;
   border-collapse: collapse;
-  background: url("crop.png");
+  background: url("sahar.png");
   background-size: 600px 600px;
 }
 
@@ -13,10 +13,10 @@ div{
 
 p{
   font-size: 30px;
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 
-button{
+.startButton{
   height: 50px;
   width: 100px;
   position: absolute;
@@ -26,8 +26,8 @@ button{
   transform: translate(-50%, -50%);
 }
 
-table, td {
-/*   border: 1px solid; */
+table {
+  border: 1px solid;
 }
 
 .snakeClass3{
@@ -71,3 +71,62 @@ table, td {
   background-repeat: no-repeat;
   background-size: 40px 40px;
 }
+
+.phoneButtons{
+  display: none;
+  height: 400px;
+  width: 600px;
+  position: relative;
+}
+
+.upButton{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: url("arrow-up-outline.png");
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  }
+
+    .downButton{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+          background: url("arrow-down-outline.png");
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  }
+
+    .rightButton{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+          background: url("arrow-forward-outline.png");
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  }
+
+    .leftButton{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+          background: url("arrow-back-outline.png");
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  }
