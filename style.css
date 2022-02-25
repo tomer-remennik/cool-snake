@@ -4,6 +4,9 @@ table{
   border-collapse: collapse;
   background: url("crop.png");
   background-size: 600px 600px;
+  border-spacing: 0;
+  padding: 0;
+  border: 1px solid;
 }
 
 div{
@@ -26,8 +29,8 @@ p{
   transform: translate(-50%, -50%);
 }
 
-table {
-  border: 1px solid;
+td {
+  padding: 0;
 }
 
 .snakeClass3{
