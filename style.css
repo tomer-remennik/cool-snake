@@ -6,12 +6,16 @@ table{
   background-size: 600px 600px;
   border-spacing: 0;
   padding: 0;
-  border: 1px solid;
 }
 
-div{
+.mainDiv{
   position: relative;
   display: inline-block;
+}
+
+.tableDiv{
+  display: inline-block;
+  border: 1px solid;
 }
 
 p{
