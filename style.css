@@ -2,7 +2,7 @@ table{
   width: 600px;
   height: 600px;
   border-collapse: collapse;
-  background: url("sahar.png");
+  background: url("crop.png");
   background-size: 600px 600px;
 }
 
@@ -55,7 +55,7 @@ table {
 }
 
 .snakeClassHead{
-  background: url("ron.png");
+  background: url("sahar.png");
   background-repeat: no-repeat;
   background-size: 40px 40px;
 }
