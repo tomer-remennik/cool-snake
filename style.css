@@ -1,0 +1,73 @@
+table{
+  width: 600px;
+  height: 600px;
+  border-collapse: collapse;
+  background: url("yona.jpeg");
+  background-size: 600px 600px;
+}
+
+div{
+  position: relative;
+  display: inline-block;
+}
+
+p{
+  font-size: 30px;
+  margin: 0;
+}
+
+button{
+  height: 50px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+table, td {
+/*   border: 1px solid; */
+}
+
+.snakeClass3{
+  background: green;
+}
+
+.snakeClass2{
+  background: yellow;
+}
+
+.snakeClass4{
+  background: blue;
+}
+
+.snakeClass0{
+  background: red;
+}
+
+.snakeClass5{
+  background: purple;
+}
+
+.snakeClass1{
+  background: orange;
+}
+
+.snakeClassHead{
+  background: url("ron.png");
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+}
+
+.appleClass{
+  background: url("apple.png");
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+}
+
+.starClass{
+  background: url("star.png");
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+}
